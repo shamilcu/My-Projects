@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIRÉ Atelier – Our Story</title>
+    <meta name="description" content="Crafted in Darkness. Defined by Elegance. The story of NOIRÉ.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NOIRÉ</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="collection.html" class="nav-link">Collection</a>
+                <a href="experience.html" class="nav-link">Runway</a>
+                <a href="ai-preview.html" class="nav-link">AI Preview</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Cinematic Hero Section -->
+    <header class="hero about-hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2574&auto=format&fit=crop"
+                alt="Luxury Atelier Interior" class="hero-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="reveal-text">Crafted in Darkness.</span><br>
+                <span class="reveal-text">Defined by Elegance.</span>
+            </h1>
+            <div class="gold-divider"></div>
+            <p class="hero-subtitle reveal-text-delay">
+                NOIRÉ is not just fashion. It is an architecture of the self.<br>
+                Where shadow meets structural perfection.
+            </p>
+        </div>
+    </header>
+
+    <!-- 2. Brand Philosophy Section -->
+    <section class="philosophy">
+        <div class="philosophy-row">
+            <div class="philosophy-text">
+                <h2 class="section-title">Precision Tailoring</h2>
+                <p>Every stitch is a deliberate act of rebellion against the ordinary. Our master tailors sculpt fabric
+                    like marble, ensuring a silhouette that commands the room.</p>
+            </div>
+            <div class="philosophy-img">
+                <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=2670&auto=format&fit=crop"
+                    alt="Tailoring Detail">
+            </div>
+        </div>
+        <div class="philosophy-row reverse">
+            <div class="philosophy-text">
+                <h2 class="section-title">Premium Materials</h2>
+                <p>Sourced from the rarest mills in Italy and Japan. We blend heritage wools with avant-garde synthetics
+                    to create textures that must be felt to be believed.</p>
+            </div>
+            <div class="philosophy-img">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDgwMCA4MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgZmlsbD0iIzBGMEYwRiIvPgogICAgPHBhdGggZD0iTTAgMjAwQzIwMCAxMDAgNjAwIDMwMCA4MDAgMjAwVjgwMEgwVjIwMFoiIGZpbGw9InVybCgjZ3JhZDEpIiBvcGFjaXR5PSIwLjMiLz4KICAgIDxwYXRoIGQ9Ik0wIDQwMEMzMDAgMzAwIDUwMCA1MDAgODAwIDQwMFY4MDBIMFY0MDBaIiBmaWxsPSJ1cmwoI2dyYWQyKSIgb3BhY2l0eT0iMC41Ii8+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iNDAwIiB5MT0iMjAwIiB4Mj0iNDAwIiB5Mj0iODAwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNjOWEyMjciIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iYmxhY2siLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZDIiIHgxPSIzNjAiIHkxPSIyNDAiIHgyPSIzNjAiIHkyPSI4ODAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzFBMUExQSIvPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9ImJsYWNrIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KPC9zdmc+"
+                    alt="Fabric Texture">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Founder / Creative Director -->
+    <section class="founder">
+        <div class="founder-card-wrapper">
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2574&auto=format&fit=crop"
+                        alt="Creative Director">
+                </div>
+                <div class="founder-bio">
+                    <h3>Julian V. Noir</h3>
+                    <p class="founder-role">Creative Director</p>
+                    <blockquote>"Fashion is the armor for everyday life. We build that armor with gold and shadows."
+                    </blockquote>
+                    <p class="bio-text">Started in a small Parisian atelier, Julian sought to merge the timelessness of
+                        gothic architecture with the sharp lines of modernism.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Animated Brand Timeline -->
+    <section class="timeline-section">
+        <h2 class="section-title center">The Legacy</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2022</h3>
+                    <p>The Concept Born. A sketch on a napkin in a dimly lit cafe in Milan.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2023</h3>
+                    <p>First Collection "Midnight" launches to critical acclaim during Paris Fashion Week.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2024</h3>
+                    <p>Digital Runway Debut. Breaking boundaries with virtual models.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2025</h3>
+                    <p>AI Experience Integration. Personalizing luxury for the digital age.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Innovation Section -->
+    <section class="innovation">
+        <div class="innovation-grid">
+            <div class="innovation-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI Personalization</h3>
+                <p>Curating wardrobes that learn from your style.</p>
+            </div>
+            <div class="innovation-card">
+                <i class="fas fa-cube"></i>
+                <h3>3D Visualization</h3>
+                <p>Interact with our garments before they even exist.</p>
+            </div>
+            <div class="innovation-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Sustainable Luxury</h3>
+                <p>Zero-waste production models and ethical sourcing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer CTA -->
+    <section class="footer-cta">
+        <div class="cta-content">
+            <h2>Become Part of the Legacy</h2>
+            <a href="index.html#collection" class="cta-button">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Inline script for About page specific animations
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Hero
+            gsap.from('.gold-divider', { width: 0, duration: 1.5, ease: 'power2.out', delay: 1 });
+
+            // Philosophy
+            gsap.utils.toArray('.philosophy-row').forEach(row => {
+                gsap.from(row.querySelector('.philosophy-text'), {
+                    scrollTrigger: { trigger: row, start: 'top 80%' },
+                    x: row.classList.contains('reverse') ? 50 : -50,
+                    duration: 1
+                });
+                gsap.from(row.querySelector('.philosophy-img'), {
+                    scrollTrigger: { trigger: row, start: 'top 80%' },
+                    scale: 0.9,
+                    duration: 1
+                });
+            });
+
+            // Founder
+            gsap.from('.founder-card', {
+                scrollTrigger: { trigger: '.founder', start: 'top 70%' },
+                y: 100,
+                duration: 1.2,
+                ease: 'power3.out'
+            });
+
+            // Timeline
+            gsap.from('.timeline-line', {
+                scrollTrigger: { trigger: '.timeline-container', start: 'top 80%', end: 'bottom 80%', scrub: 1 },
+                height: 0,
+                ease: 'none'
+            });
+
+            gsap.utils.toArray('.timeline-item').forEach(item => {
+                gsap.from(item, {
+                    scrollTrigger: { trigger: item, start: 'top 85%' },
+                    y: 30,
+                    duration: 0.8
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

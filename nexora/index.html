@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORA | Powering the Next Era of On-Chain Innovation</title>
+    <meta name="description"
+        content="NEXORA is building the foundational infrastructure for decentralized identity, on-chain communities, and NFT ecosystems.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <canvas id="three-canvas"></canvas>
+    <div id="custom-cursor"></div>
+    <div class="glow-blobs">
+        <div class="blob blob-purple"></div>
+        <div class="blob blob-blue"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">NEXORA<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+                <li><a href="#vision" class="nav-link">Vision</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+            </ul>
+            <a href="#" class="btn-sm btn-primary">Launch App</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="reveal-up">Building the Future of <br><span class="gradient-text">On-Chain
+                            Communities.</span></h1>
+                    <p class="reveal-up delay-1">NEXORA empowers creators, developers, and brands with scalable Web3
+                        infrastructure designed for the next generation of digital ownership.</p>
+                    <div class="hero-btns reveal-up delay-2">
+                        <a href="#ecosystem" class="btn-primary">Launch App</a>
+                        <a href="#" class="btn-outline">Read Whitepaper</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-left scroll-reveal">
+                        <h2 class="section-title">Infrastructure for a <br><span class="purple">Decentralized
+                                World.</span></h2>
+                    </div>
+                    <div class="about-right scroll-reveal">
+                        <p class="lead">We design and deploy secure, scalable, and modular blockchain solutions that
+                            power digital ecosystems.</p>
+                        <p>From decentralized identity to NFT marketplaces, our protocol enables seamless Web3
+                            integration for enterprises and creators alike. We believe in a world where ownership is
+                            truly sovereign and interoperable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecosystem" class="ecosystem">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title centered">The Nexus Ecosystem.</h2>
+                </div>
+                <div class="card-grid">
+                    <div class="glass-card scroll-reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">🔐</div>
+                        <h3>Nexora Identity</h3>
+                        <p>Decentralized identity framework for secure authentication and self-sovereign data control.
+                        </p>
+                        <a href="#" class="card-link">Explore Identity →</a>
+                    </div>
+                    <div class="glass-card scroll-reveal">
+                        <div class="card-glow" style="background: var(--blue);"></div>
+                        <div class="card-icon">🌐</div>
+                        <h3>Nexora Chain</h3>
+                        <p>High-performance blockchain infrastructure optimized for massive scale and low latency.</p>
+                        <a href="#" class="card-link">Explore Chain →</a>
+                    </div>
+                    <div class="glass-card scroll-reveal">
+                        <div class="card-glow" style="background: var(--primary-gradient);"></div>
+                        <div class="card-icon">🖼</div>
+                        <h3>Nexora Market</h3>
+                        <p>Next-gen NFT marketplace with multi-chain compatibility and advanced minting primitives.</p>
+                        <a href="#" class="card-link">Explore Market →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="vision">
+            <div class="container">
+                <div class="vision-content scroll-reveal">
+                    <div class="vision-line">The internet is evolving.</div>
+                    <div class="vision-line gold">Ownership is shifting.</div>
+                    <div class="vision-line">Communities are becoming sovereign.</div>
+                    <div class="vision-statement">We are building the rails for that future.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title centered">Our Core Team.</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card scroll-reveal">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-placeholder"></div>
+                        </div>
+                        <h4>Elena Vance</h4>
+                        <span class="team-role">Founder & CEO</span>
+                    </div>
+                    <div class="team-card scroll-reveal">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-placeholder"></div>
+                        </div>
+                        <h4>Marcus Chen</h4>
+                        <span class="team-role">Head of Engineering</span>
+                    </div>
+                    <div class="team-card scroll-reveal">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-placeholder"></div>
+                        </div>
+                        <h4>Sola Rossi</h4>
+                        <span class="team-role">Creative Director</span>
+                    </div>
+                    <div class="team-card scroll-reveal">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-placeholder"></div>
+                        </div>
+                        <h4>Kael Thorne</h4>
+                        <span class="team-role">Community Lead</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">NEXORA</a>
+                <p>Scaling the decentralized web through elite infrastructure.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Protocol</h5>
+                    <a href="#">Whitepaper</a>
+                    <a href="https://github.com/nexora">GitHub</a>
+                    <a href="#">Docs</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Connect</h5>
+                    <a href="https://twitter.com/nexora">Twitter</a>
+                    <a href="#">Discord</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Legal</h5>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 NEXORA Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

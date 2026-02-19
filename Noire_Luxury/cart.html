@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag – NOIRÉ</title>
+    <meta name="description" content="Your exclusive selection at NOIRÉ. Review your pieces before checkout.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="cart-page">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NOIRÉ</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="collection.html" class="nav-link">Collection</a>
+                <a href="experience.html" class="nav-link">Runway</a>
+                <a href="ai-preview.html" class="nav-link">AI Preview</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Content -->
+    <main class="cart-main">
+        <div class="cart-container">
+            <header class="cart-header">
+                <h1 class="cart-title">Your Bag</h1>
+                <p class="cart-subtitle">Review your selected pieces.</p>
+            </header>
+
+            <div class="cart-grid">
+                <!-- Cart Items List -->
+                <div class="cart-items-section">
+                    <div id="cart-items-container">
+                        <!-- Items will be injected by JS -->
+                        <div class="loader-container">
+                            <div class="loader-spinner"></div>
+                        </div>
+                    </div>
+
+                    <!-- Empty State -->
+                    <div id="empty-cart-msg" class="empty-cart-msg hidden">
+                        <i class="fas fa-shopping-bag"></i>
+                        <p>Your bag is currently empty.</p>
+                        <a href="collection.html" class="btn-outline">Continue Shopping</a>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <aside class="cart-summary-section">
+                    <div class="summary-card">
+                        <h2 class="summary-title">Order Summary</h2>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal-val">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="shipping-val">Complimentary</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax (Estimated)</span>
+                            <span id="tax-val">$0.00</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="total-val">$0.00</span>
+                        </div>
+
+                        <button class="checkout-btn">
+                            <span>Proceed to Checkout</span>
+                            <i class="fas fa-lock"></i>
+                        </button>
+
+                        <div class="secure-payment">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Checkout Powered by NoirPay</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo">NOIRÉ</span>
+                <p>Redefining luxury for the modern era.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Atelier</h4>
+                    <a href="about.html">Our Story</a>
+                    <a href="experience.html">Runway</a>
+                    <a href="#">Bespoke</a>
+                </div>
+                <div class="link-group">
+                    <h4>Client Care</h4>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NOIRÉ Atelier. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Inline cart initialization if needed, or handled by script.js
+        document.addEventListener('DOMContentLoaded', () => {
+            // Logic will be implemented in script.js to be shared across pages
+        });
+    </script>
+</body>
+
+</html>

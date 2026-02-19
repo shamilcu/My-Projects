@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIRÉ – Timeless Luxury</title>
+    <meta name="description" content="Redefining Modern Luxury. Discover the exclusive collection at NOIRÉ.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-text">NOIRÉ</div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NOIRÉ</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="collection.html" class="nav-link">Collection</a>
+                <a href="experience.html" class="nav-link">Runway</a>
+                <a href="ai-preview.html" class="nav-link">AI Preview</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=2574&auto=format&fit=crop"
+                alt="Luxury Fashion Model" class="hero-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="reveal-text">Redefining</span><br>
+                <span class="reveal-text">Modern Luxury</span>
+            </h1>
+            <p class="hero-subtitle reveal-text-delay">Timeless elegance for the contemporary soul.</p>
+            <a href="#collection" class="cta-button reveal-text-delay">
+                <span>Explore Collection</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </header>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="section-header">
+            <h2 class="section-title">The Collection</h2>
+            <p class="section-subtitle">Curated for the elite.</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product Cards will be injected by JS -->
+        </div>
+    </section>
+
+    <!-- Runway Gallery -->
+    <section id="runway" class="runway">
+        <div class="runway-header">
+            <h2 class="runway-title">Runway 2026</h2>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper runway-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=2576&auto=format&fit=crop"
+                        alt="Runway 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=2572&auto=format&fit=crop"
+                        alt="Runway 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=2673&auto=format&fit=crop"
+                        alt="Runway 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=2574&auto=format&fit=crop"
+                        alt="Runway 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2574&auto=format&fit=crop"
+                        alt="Runway 5">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal-backdrop">
+        <div class="product-modal">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-content">
+                <div class="modal-image-container">
+                    <!-- Images injected via JS -->
+                    <div class="skeleton-loader"></div>
+                </div>
+                <div class="modal-details">
+                    <h2 class="modal-title">Product Name</h2>
+                    <p class="modal-price">$0.00</p>
+                    <p class="modal-description">Description goes here.</p>
+
+                    <div class="modal-options">
+                        <div class="size-selector">
+                            <span>Size:</span>
+                            <div class="size-btns">
+                                <button>S</button>
+                                <button class="active">M</button>
+                                <button>L</button>
+                                <button>XL</button>
+                            </div>
+                        </div>
+                        <div class="quantity-selector">
+                            <span>Qty:</span>
+                            <div class="qty-controls">
+                                <button class="qty-btn minus">-</button>
+                                <span class="qty-val">1</span>
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="add-to-cart-btn-modal">
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

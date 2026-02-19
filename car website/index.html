@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURAX MOTORS | Engineering the Future of Speed</title>
+    <meta name="description"
+        content="Experience the ultimate in automotive luxury and speed with Aurax Motors. Explore our collection of premium sports cars.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="loading">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Cinematic Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="loader-logo">AURAX</h1>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+            <p class="loader-status">INITIALIZING SYSTEM...</p>
+        </div>
+    </div>
+
+    <!-- 3D Canvas Container -->
+    <div id="canvas-container">
+        <canvas id="main-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AURAX<span class="gold-text">MOTORS</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#collection">COLLECTION</a></li>
+                <li><a href="#showcase">SHOWCASE</a></li>
+                <li><a href="#interior">INTERIOR</a></li>
+                <li><a href="#booking">BOOKING</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#booking" class="btn btn-nav">RESERVE NOW</a>
+            </div>
+            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h2 class="sub-title">PERFORMANCE UNLEASHED</h2>
+                    <h1 class="main-title">BEYOND <span class="gold-text">LIMITS</span></h1>
+                    <p class="hero-tagline">Experience the fusion of futuristic engineering and timeless luxury. Aurax
+                        Motors presents the new standard of speed.</p>
+                    <div class="hero-btns">
+                        <a href="#collection" class="btn btn-gold">EXPLORE COLLECTION</a>
+                        <a href="#booking" class="btn btn-outline">BOOK TEST DRIVE</a>
+                    </div>
+
+                    <!-- HUD Telemetry -->
+                    <div class="hud-overlay hero-hud">
+                        <div class="hud-line"></div>
+                        <div class="hud-data">SYSTEM_STATUS: STABLE // SPEED_UNIT: KM/H // AUTH: GA-09</div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <div class="mouse"></div>
+                <span>SCROLL TO EXPLORE</span>
+            </div>
+        </section>
+
+        <!-- Collection Section -->
+        <section id="collection" class="collection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal">ELITE <span class="gold-text">COLLECTION</span></h2>
+                    <p class="section-desc reveal">A curated selection of high-performance machines engineered for those
+                        who demand excellence.</p>
+                </div>
+
+                <div class="car-grid">
+                    <!-- Car 1 -->
+                    <div class="car-card reveal" data-tilt>
+                        <div class="car-card-inner">
+                            <div class="car-info">
+                                <span class="car-series">SERIES 01</span>
+                                <h3>PHANTOM X</h3>
+                                <p>The ultimate stealth hypercar. Lightweight, powerful, and uncompromising.</p>
+                                <div class="car-price">$2.4M</div>
+                            </div>
+                            <div class="car-image-placeholder">
+                                <img src="assets/phantom_x.jpg" alt="Phantom X">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Car 2 -->
+                    <div class="car-card reveal highlighted" data-tilt>
+                        <div class="car-card-inner">
+                            <div class="car-info">
+                                <span class="car-series">SERIES 02</span>
+                                <h3>VELOCITY GT</h3>
+                                <p>Reimagining grand touring for the modern era. Pure electric dominance.</p>
+                                <div class="car-price">$1.8M</div>
+                            </div>
+                            <div class="car-image-placeholder">
+                                <img src="assets/velocity_gt.jpg" alt="Velocity GT">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Car 3 -->
+                    <div class="car-card reveal" data-tilt>
+                        <div class="car-card-inner">
+                            <div class="car-info">
+                                <span class="car-series">SERIES 03</span>
+                                <h3>TITAN R</h3>
+                                <p>Power in its purest form. A track beast designed for the open road.</p>
+                                <div class="car-price">$3.1M</div>
+                            </div>
+                            <div class="car-image-placeholder">
+                                <img src="assets/titan_r.jpg" alt="Titan R">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Showcase Section -->
+        <section id="showcase" class="showcase">
+            <div class="container split-layout">
+                <div class="showcase-content">
+                    <h2 class="section-title reveal">360° <span class="gold-text">PRECISION</span></h2>
+                    <p class="reveal">Rotate and inspect every curve of the Velocity GT. Crafted with aerospace-grade
+                        carbon fiber and aero-active surfaces.</p>
+
+                    <!-- Model Selector -->
+                    <div class="model-selector reveal">
+                        <button class="model-btn active" data-model="VELOCITY GT">VELOCITY GT</button>
+                        <button class="model-btn" data-model="PHANTOM X">PHANTOM X</button>
+                        <button class="model-btn" data-model="TITAN R">TITAN R</button>
+                    </div>
+
+                    <div class="specs-grid reveal">
+                        <div class="spec-item">
+                            <span class="spec-label">ENGINE</span>
+                            <span class="spec-value">QUAD-MOTOR</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">HORSEPOWER</span>
+                            <span class="spec-value">1,900 HP</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">0–100 KM/H</span>
+                            <span class="spec-value">1.8s</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">TOP SPEED</span>
+                            <span class="spec-value">420 KM/H</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-visual reveal">
+                    <img src="assets/velocity_gt.jpg" alt="Velocity GT Showcase">
+                    <!-- Interaction instructions for browser user -->
+                    <div class="interaction-hint">
+                        <i class="fas fa-arrows-alt"></i>
+                        <span>DRAG TO ROTATE CAR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interior Section -->
+        <section id="interior" class="interior">
+            <div class="interior-bg"></div>
+            <div class="container">
+                <div class="interior-content reveal">
+                    <h2 class="section-title">THE <span class="gold-text">SANCTUARY</span></h2>
+                    <p>Designed for complete immersion. Italian leather meet futuristic HUD displays. Every detail is
+                        focused on the driver's connection to the machine.</p>
+                    <a href="#" class="btn btn-outline">EXPLORE CABIN</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking">
+            <div class="container">
+                <div class="glass-form-container reveal">
+                    <div class="form-header">
+                        <h2 class="section-title">JOIN THE <span class="gold-text">ELITE</span></h2>
+                        <p>Register your interest for an exclusive test drive experience.</p>
+                    </div>
+                    <form id="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>FULL NAME</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>EMAIL ADDRESS</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>SELECT MODEL</label>
+                            <select required>
+                                <option value="" disabled selected>Select a car</option>
+                                <option value="phantom">Phantom X</option>
+                                <option value="velocity">Velocity GT</option>
+                                <option value="titan">Titan R</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>PREFERRED LOCATION</label>
+                            <input type="text" placeholder="e.g. Monaco, Dubai, London">
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-full">SUBMIT APPLICATION</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2 class="logo">AURAX<span class="gold-text">MOTORS</span></h2>
+                    <p>Engineering the future of speed and luxury since 2024.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>EXPLORE</h3>
+                    <ul>
+                        <li><a href="#">Showroom</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Pre-Owned</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>NEWSLETTER</h3>
+                    <p>Subscribe for exclusive updates and event invites.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit">JOIN</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AURAX MOTORS. ALL RIGHTS RESERVED.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <div id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

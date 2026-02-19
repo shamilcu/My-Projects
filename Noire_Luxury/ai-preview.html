@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIRÉ – AI Outfit Preview</title>
+    <meta name="description" content="Try on the NOIRÉ collection virtually with our AI-powered preview.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- TensorFlow.js and Pose Detection -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ai-preview-page">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">NOIRÉ</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="collection.html" class="nav-link">Collection</a>
+                <a href="experience.html" class="nav-link">Runway</a>
+                <a href="ai-preview.html" class="nav-link active">AI Preview</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Exit</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- AI Preview Section -->
+    <section class="ai-container-fullscreen">
+
+        <!-- Left: Live Preview -->
+        <div class="ai-preview-area">
+            <div class="camera-wrapper">
+                <video id="webcam-video" autoplay playsinline muted></video>
+                <canvas id="ai-canvas"></canvas>
+
+                <!-- Overlay UI -->
+                <div class="ai-overlay-ui" id="ai-start-overlay">
+                    <div class="ai-loader" id="ai-loader">
+                        <div class="spinner"></div>
+                        <p>Initializing AI Models...</p>
+                    </div>
+                    <button id="start-ai-btn" disabled>
+                        <i class="fas fa-camera"></i> Start Camera
+                    </button>
+                    <p class="ai-instruction">Allow camera access to try on outfits.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Control Panel -->
+        <div class="ai-control-panel">
+            <div class="panel-header">
+                <h2>Virtual Fitting Room</h2>
+                <p>Select an outfit to preview.</p>
+            </div>
+
+            <div class="control-group">
+                <h3>Select Outfit</h3>
+                <div class="outfit-grid">
+                    <div class="outfit-item active"
+                        data-src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjYwMCIgdmlld0JveD0iMCAwIDUwMCA2MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJNMTUwIDUwIEMgMTAwIDUwIDUwIDEwMCA1MCAxNTAgTDgwIDE4MCBDIDgwIDIwMCAxMDAgMjIwIDEyMCAyMjAgTCAxNTAgMjIwIEwgMTUwIDU1MCBDIDE1MCA1NzAgMTcwIDU5MCAxOTAgNTkwIEwgMzEwIDU5MCBDIDMzMCA1OTAgMzUwIDU3MCAzNTAgNTUwIEwgMzUwIDIyMCBMIDM4MCAyMjAgQyA0MDAgMjIwIDQyMCAyMDAgNDIwIDE4MCBMIDQ1MCAxNTAgQyA0NTAgMTAwIDQwMCA1MCAzNTAgNTAgTCAzMDAgODAgQyAzMDAgODAgMjc1IDcwIDI1MCA3MCBDIDIyNSA3MCAyMDAgODAgMjAwIDgwIEwgMTUwIDUwWiIgZmlsbD0iIzExMSIgc3Ryb2tlPSIjYzlhMjI3IiBzdHJva2Utd2lkdGg9IjEwIi8+Cjwvc3ZnPg==">
+                        <img src="https://plus.unsplash.com/premium_png-1673327663368-2b28c867201c?w=100&h=100&auto=format&fit=crop"
+                            alt="T-Shirt">
+                    </div>
+                    <div class="outfit-item"
+                        data-src="https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=200&auto=format&fit=crop">
+                        <!-- Placeholder for another outfit (using styling image for now as placeholder) -->
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="outfit-item"
+                        data-src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=200&auto=format&fit=crop">
+                        <div class="placeholder-icon"><i class="fas fa-user-tie"></i></div>
+                    </div>
+                    <div class="outfit-item"
+                        data-src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=200&auto=format&fit=crop">
+                        <div class="placeholder-icon"><i class="fas fa-vest"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Adjust Fit</h3>
+                <div class="slider-container">
+                    <label>Size / Scale</label>
+                    <input type="range" id="size-slider" min="0.5" max="2.0" step="0.1" value="1.0">
+                </div>
+                <div class="slider-container">
+                    <label>Vertical Offset</label>
+                    <input type="range" id="y-offset-slider" min="-100" max="100" step="5" value="0">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Upload Your Photo</h3>
+                <p class="sm-text">Don't have a webcam? Upload a photo.</p>
+                <label for="image-upload" class="upload-btn">
+                    <i class="fas fa-upload"></i> Upload Image
+                </label>
+                <input type="file" id="image-upload" accept="image/*" hidden>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script> <!-- Cursor logic -->
+    <script src="aiPreview.js"></script>
+</body>
+
+</html>

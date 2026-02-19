@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIRÉ Atelier – Digital Experience</title>
+    <meta name="description" content="Interact with the future of fashion. NOIRÉ 3D Digital Experience.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="experience-page">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- UI Overlay -->
+    <div class="experience-ui">
+        <!-- Header -->
+        <div class="exp-header">
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Atelier</a>
+            <div class="exp-title">NOIRÉ ATELIER / 001</div>
+            <a href="cart.html" class="cart-icon" style="margin-left:auto; margin-right: 20px;">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="contact.html" class="back-btn">Contact <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Instructions -->
+        <div class="exp-instructions">
+            Drag to Rotate • Scroll to Zoom
+        </div>
+
+        <!-- Controls -->
+        <div class="exp-controls">
+            <h3>Material Selection</h3>
+            <div class="color-options">
+                <button class="color-btn" style="background-color: #000;" onclick="changeModelColor(0x0f0f0f)"
+                    title="Noir"></button>
+                <button class="color-btn" style="background-color: #c9a227;" onclick="changeModelColor(0xc9a227)"
+                    title="Gold"></button>
+                <button class="color-btn" style="background-color: #fff;" onclick="changeModelColor(0xffffff)"
+                    title="Blanc"></button>
+            </div>
+            <button class="wireframe-btn" onclick="toggleWireframe()">Toggle Structure</button>
+        </div>
+    </div>
+
+    <!-- Fullscreen 3D Container -->
+    <!-- Note: We use the same ID 'three-scene-container' to reuse logic if possible, 
+         OR we update JS to handle a new ID if we want distinct behavior. 
+         Let's stick to a common ID or a class, but 'three-scene-container' is hardcoded in JS.
+         We will use a new ID 'fullscreen-3d-container' and update JS to look for either. -->
+    <div id="fullscreen-3d-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="module" src="threeScene.js"></script>
+    <script src="script.js"></script> <!-- reused for cursor -->
+</body>
+
+</html>

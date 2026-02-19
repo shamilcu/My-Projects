@@ -1,0 +1,13 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="1000" fill="#0A0A0A"/>
+    <path d="M400 150L150 250V450L400 900L650 450V250L400 150Z" fill="#151515" stroke="#c9a227" stroke-width="2"/>
+    <path d="M400 150L300 350L400 500L500 350L400 150Z" fill="#0F0F0F" stroke="#c9a227" stroke-width="1"/>
+    <circle cx="400" cy="550" r="5" fill="#c9a227"/>
+    <circle cx="400" cy="600" r="5" fill="#c9a227"/>
+    <defs>
+        <linearGradient id="paint0_linear" x1="400" y1="150" x2="400" y2="900" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#1A1A1A"/>
+            <stop offset="1" stop-color="#050505"/>
+        </linearGradient>
+    </defs>
+</svg>
