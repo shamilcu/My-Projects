@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGLOO | Shaping the Future of Web3</title>
+    <meta name="description"
+        content="IGLOO is a premium Web3 startup building the software of tomorrow with bold vision and futuristic design.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <canvas id="three-canvas"></canvas>
+    <div id="custom-cursor"></div>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar sticky">
+        <div class="container navbar-content">
+            <a href="#" class="logo">IGLOO<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Products</a></li>
+                <li><a href="#vision" class="nav-link">Vision</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+            </ul>
+            <a href="#contact" class="cta-btn-sm">Get Started</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1 class="reveal-text">WE BUILD THE <span class="gradient-text">FUTURE</span> OF WEB3.</h1>
+                <p class="fade-up">IGLOO develops decentralized primitives for a more transparent, scalable, and open
+                    internet. Experience the next generation of digital ownership.</p>
+                <div class="hero-btns fade-up">
+                    <a href="#projects" class="cta-btn">Explore Projects</a>
+                    <a href="#about" class="cta-link">Learn More <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container section-padding">
+                <span class="section-tag">01 / ABOUT US</span>
+                <h2 class="section-title">Minimalist by design. <br>Powerful by core.</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>At IGLOO, we believe that the complexity of Web3 should be abstracted away, leaving only a
+                            seamless, beautiful user experience. Our mission is to bridge the gap between traditional
+                            web ease and decentralized power.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">50+</span>
+                            <span class="stat-label">Protocols Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">$2B+</span>
+                            <span class="stat-label">TVL Secured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container section-padding">
+                <span class="section-tag">02 / PRODUCTS</span>
+                <h2 class="section-title">The Igloo Ecosystem</h2>
+                <div class="project-grid">
+                    <div class="project-card glassmorphism">
+                        <div class="project-icon">🧊</div>
+                        <h3>Frost Protocol</h3>
+                        <p>Next-generation liquidity layer for cross-chain capital efficiency.</p>
+                        <a href="#" class="project-link">View Docs</a>
+                    </div>
+                    <div class="project-card glassmorphism">
+                        <div class="project-icon">🌌</div>
+                        <h3>Aurora SDK</h3>
+                        <p>Build stunning dApps with our comprehensive, reactive developer toolkit.</p>
+                        <a href="#" class="project-link">View Docs</a>
+                    </div>
+                    <div class="project-card glassmorphism">
+                        <div class="project-icon">🛡️</div>
+                        <h3>Glacier Vault</h3>
+                        <p>Institutional-grade security for digital asset management and storage.</p>
+                        <a href="#" class="project-link">View Docs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="vision-section scroll-reveal">
+            <div class="parallax-bg" id="parallax-target"></div>
+            <div class="container section-padding">
+                <span class="section-tag">03 / VISION</span>
+                <h2 class="section-title big">Decentralizing everything. <br>Empowering everyone.</h2>
+                <p class="vision-desc">We envision a world where every digital interaction is sovereign, verifiable, and
+                    free from central gatekeepers.</p>
+            </div>
+        </section>
+
+        <section id="team" class="team-section scroll-reveal">
+            <div class="container section-padding">
+                <span class="section-tag">04 / THE TEAM</span>
+                <h2 class="section-title">Engineers & Visionaries</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-img-placeholder"></div>
+                        <h4>Alex Thorne</h4>
+                        <span class="member-role">Founder & CEO</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-img-placeholder"></div>
+                        <h4>Sarah Chen</h4>
+                        <span class="member-role">Chief Architect</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-img-placeholder"></div>
+                        <h4>Marcus Vance</h4>
+                        <span class="member-role">Core Contributor</span>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-img-placeholder"></div>
+                        <h4>Elena Rossi</h4>
+                        <span class="member-role">Lead Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">IGLOO<span>.</span></a>
+                <p>Building the primitives of a decentralized world.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h5>Protocol</h5>
+                    <a href="#">Governance</a>
+                    <a href="#">Whitepaper</a>
+                </div>
+                <div class="link-group">
+                    <h5>Social</h5>
+                    <a href="#">Twitter</a>
+                    <a href="#">Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Igloo, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

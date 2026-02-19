@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON-CHAIN | Building the Future of Communities</title>
+    <meta name="description"
+        content="On-Chain is the definitive Web3 startup building decentralized communities with elite technology.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <canvas id="three-canvas"></canvas>
+    <div id="custom-cursor"></div>
+    <div class="glow-blobs">
+        <div class="blob blob-purple"></div>
+        <div class="blob blob-blue"></div>
+        <div class="blob blob-cyan"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">ON-CHAIN<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+                <li><a href="#vision" class="nav-link">Vision</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-sm btn-outline">Launch App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="reveal-up">Building the Future of <br><span class="gradient-text">On-Chain
+                            Communities.</span></h1>
+                    <p class="reveal-up delay-1">The next generation of digital infrastructure for decentralized
+                        coordination, governance on autopilot, and borderless belonging.</p>
+                    <div class="hero-btns reveal-up delay-2">
+                        <a href="#ecosystem" class="btn-primary">Launch App</a>
+                        <a href="#" class="btn-outline">Whitepaper</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-left scroll-reveal">
+                        <h2 class="section-title">Redefining <br>Digital Trust.</h2>
+                    </div>
+                    <div class="about-right scroll-reveal">
+                        <p class="lead">At On-Chain, we build the protocols that empower people to own their
+                            communities. No gatekeepers, no borders, just code.</p>
+                        <p>We've abstracted the complexity of blockchain to provide an elite, seamless experience for
+                            millions of users worldwide. Our infrastructure is the backbone of the decentralized social
+                            revolution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecosystem" class="ecosystem">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title centered">The Ecosystem.</h2>
+                </div>
+                <div class="card-grid">
+                    <div class="glass-card scroll-reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-icon">💳</div>
+                        <h3>Web3 Wallet</h3>
+                        <p>Seamless cross-chain management with biometric security and zero-gas fee abstractions.</p>
+                        <a href="#" class="card-link">Explore →</a>
+                    </div>
+                    <div class="glass-card scroll-reveal">
+                        <div class="card-glow" style="background: var(--cyan);"></div>
+                        <div class="card-icon">🎨</div>
+                        <h3>NFT Marketplace</h3>
+                        <p>The ultimate venue for rare digital artifacts and community-governed IP distributions.</p>
+                        <a href="#" class="card-link">Explore →</a>
+                    </div>
+                    <div class="glass-card scroll-reveal">
+                        <div class="card-glow" style="background: var(--purple);"></div>
+                        <div class="card-icon">🆔</div>
+                        <h3>Decentralized Identity</h3>
+                        <p>Self-sovereign identity primitives that protect your privacy while proving your humanity.</p>
+                        <a href="#" class="card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="vision">
+            <div class="container">
+                <div class="vision-container scroll-reveal">
+                    <h2 class="vision-title">Total Sovereignty. <br>Infinite Scaling.</h2>
+                    <p class="vision-desc">We vision a world where code replaces trust, and every community is a
+                        sovereign nation on the internet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title centered">Engineered by Pioneers.</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card scroll-reveal">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-placeholder"></div>
+                        </div>
+                        <h4>Dr. Aris Vance</h4>
+                        <span class="role">Founding Engineer</span>
+                    </div>
+                    <div class="team-card scroll-reveal">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-placeholder"></div>
+                        </div>
+                        <h4>Lyra Thorne</h4>
+                        <span class="role">Lead Architect</span>
+                    </div>
+                    <div class="team-card scroll-reveal">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-placeholder"></div>
+                        </div>
+                        <h4>Jaxen Grey</h4>
+                        <span class="role">Product Lead</span>
+                    </div>
+                    <div class="team-card scroll-reveal">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-placeholder"></div>
+                        </div>
+                        <h4>Sola Ray</h4>
+                        <span class="role">Operations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#" class="logo">ON-CHAIN</a>
+                <p>On-Chain is building the primitives for a decentralized future.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <h5>Links</h5>
+                    <a href="#">Github</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Audit</a>
+                </div>
+                <div class="footer-social">
+                    <h5>Community</h5>
+                    <a href="#">Twitter</a>
+                    <a href="#">Discord</a>
+                    <a href="#">Lens</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 On-Chain Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
