@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS AI | The Intelligence Layer for Modern Teams</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description"
+        content="Next-generation AI orchestration platform. Empower your team with intelligent workflows and high-performance neural computing.">
+
+    <!-- Fonts: Sora for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+
+    <!-- Custom Cursor -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Preloader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">NEXUS<span>AI</span></div>
+            <div class="loader-line-container">
+                <div class="loader-line"></div>
+            </div>
+            <p class="loader-text">SYNCHRONIZING NEURAL LAYERS</p>
+        </div>
+    </div>
+
+    <!-- Background Canvas Layer -->
+    <canvas id="neural-canvas"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="gradient-bg-orb orb-1"></div>
+    <div class="gradient-bg-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon"></div>
+                NEXUS<span>AI</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#docs" class="nav-link">Docs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn-ghost">Log In</a>
+                <a href="#" class="btn-primary magnetic">Get Started <i class="arrow-icon"></i></a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="container hero-container grid">
+                <div class="hero-content">
+                    <div class="hero-badge reveal">
+                        <span class="badge-dot"></span>
+                        v2.4 Neural Core Update
+                    </div>
+                    <h1 class="hero-title reveal">
+                        The Intelligence Layer For <br>
+                        <span class="text-gradient typewriter"
+                            data-words='["Modern Teams", "High Growth", "Scale-ups", "Future Vision"]'></span>
+                    </h1>
+                    <p class="hero-description reveal">
+                        Nexus AI orchestrates your entire workflow with autonomous neural agents. Scale your operations
+                        without increasing complexity.
+                    </p>
+                    <div class="hero-actions reveal">
+                        <button class="btn-primary btn-large magnetic">Start Free Trial</button>
+                        <button class="btn-secondary btn-large magnetic">
+                            <span class="play-icon"></span> View Demo
+                        </button>
+                    </div>
+
+                    <div class="hero-logos reveal">
+                        <p class="logo-text">TRUSTED BY INNOVATIVE TEAMS</p>
+                        <div class="logos-group">
+                            <div class="logo-item">LOGIC</div>
+                            <div class="logo-item">CYBER</div>
+                            <div class="logo-item">NEURAL</div>
+                            <div class="logo-item">QUANTUM</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-stats reveal">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="99.9">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label">Uptime SLA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="240">0</span><span class="stat-suffix">k+</span>
+                            <span class="stat-label">Neural Nodes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="visual-container">
+                    <div class="brain-svg-container">
+                        <!-- AI Brain Stroke Animation Placeholder -->
+                        <svg class="brain-svg" viewBox="0 0 400 400">
+                            <circle cx="200" cy="200" r="150" class="ring ring-1"></circle>
+                            <circle cx="200" cy="200" r="100" class="ring ring-2"></circle>
+                            <path d="M200,50 Q120,50 120,130 T200,210 T280,130 T200,50" class="brain-core"></path>
+                            <g class="nodes">
+                                <circle cx="200" cy="50" r="4" class="node"></circle>
+                                <circle cx="120" cy="130" r="4" class="node"></circle>
+                                <circle cx="280" cy="130" r="4" class="node"></circle>
+                                <circle cx="200" cy="210" r="4" class="node"></circle>
+                            </g>
+                        </svg>
+                    </div>
+                    <!-- Floating Glass UI Elements -->
+                    <div class="floating-ui card-1 glass">
+                        <div class="ui-icon">🧠</div>
+                        <div class="ui-data">
+                            <div class="ui-bar" style="width: 80%"></div>
+                            <div class="ui-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="floating-ui card-2 glass">
+                        <div class="ui-tag">Fast</div>
+                        <div class="ui-value">0.02ms</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features section" id="features">
+            <div class="container feature-container">
+                <div class="section-header text-center reveal">
+                    <h2 class="section-title">Built for Performance</h2>
+                    <p class="section-subtitle">Ultra-low latency AI infrastructure designed for scale.</p>
+                </div>
+
+                <div class="feature-grid grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card glass tilt reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-icon-container">
+                            <div class="card-icon icon-blue"></div>
+                        </div>
+                        <h3 class="card-title">Autonomous Agents</h3>
+                        <p class="card-text">Self-correcting neural agents that manage complex task hierarchies without
+                            human intervention.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card glass tilt reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-icon-container">
+                            <div class="card-icon icon-purple"></div>
+                        </div>
+                        <h3 class="card-title">Neural Pipelines</h3>
+                        <p class="card-text">Direct integration into your existing CI/CD pipelines with our
+                            high-performance SDK.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card glass tilt reveal">
+                        <div class="card-glow"></div>
+                        <div class="card-icon-container">
+                            <div class="card-icon icon-neon"></div>
+                        </div>
+                        <h3 class="card-title">Real-time Inference</h3>
+                        <p class="card-text">Edge-computing nodes globally distributed to ensure sub-10ms response times
+                            for your users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta-banner glass reveal">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to automate your future?</h2>
+                        <p class="cta-text">Join 500+ teams building the future with Nexus AI.</p>
+                        <div class="cta-actions">
+                            <button class="btn-primary btn-large magnetic">Get Started for Free</button>
+                            <button class="btn-ghost btn-large">Talk to Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="container footer-container grid">
+            <div class="footer-info">
+                <a href="#" class="footer-logo">NEXUS<span>AI</span></a>
+                <p class="footer-description">Building the bridge between human creativity and artificial intelligence.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-title">Platform</h4>
+                <ul>
+                    <li><a href="#">Agent Core</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-title">Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-title">Social</h4>
+                <div class="footer-social">
+                    <a href="#" class="social-link">TW</a>
+                    <a href="#" class="social-link">LN</a>
+                    <a href="#" class="social-link">GH</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy container">
+            <p>&copy; 2026 Nexus AI Orchestration. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
