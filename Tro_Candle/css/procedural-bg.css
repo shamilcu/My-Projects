@@ -1,0 +1,60 @@
+/* --- Luxury Lifestyle Background --- */
+body {
+    background-color: var(--clr-bg);
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("https://images.unsplash.com/photo-1602874801007-bd458bb1bc84?q=80&w=1920&auto=format&fit=crop");
+    /* Luxury Scented Mood */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--clr-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Brand Overlay (Label Replacement) --- */
+.brand-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+}
+
+.brand-overlay h2 {
+    font-family: var(--font-heading);
+    font-size: 8rem;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(212, 175, 55, 0.3);
+    letter-spacing: 1rem;
+    white-space: nowrap;
+}
+
+/* --- Floating Gold Dust --- */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 100;
+    mix-blend-mode: color-dodge;
+    animation: goldDustMove 20s linear infinite;
+}
+
+@keyframes goldDustMove {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1) rotate(1deg);
+    }
+}

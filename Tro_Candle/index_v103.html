@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tro Candle | Luxury Scented Essentials</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/procedural-bg.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body class="loading">
+
+    <!-- Brand Texture Overlay -->
+    <div class="brand-overlay">
+        <h2>TRO CANDLE</h2>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <h1 class="loader-logo">TRO CANDLE</h1>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+            <p class="loader-status">PERFUMING THE VIBE...</p>
+        </div>
+    </div>
+
+    <!-- 3D Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container container-hero">
+                <div class="hero-content">
+                    <h2 class="hero-label reveal">LIMITED EDITION</h2>
+                    <h1 class="hero-title reveal">The Art of <br><span>Atmosphere</span></h1>
+                    <p class="hero-description reveal">Hand-poured perfection meet cinematic scent-scapes. Experience
+                        the glow of pure luxury.</p>
+                    <div class="hero-actions reveal">
+                        <button class="btn btn-primary magnetic">DISCOVER THE SCENT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fragrance Notes -->
+        <section class="notes" id="notes">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">THE OLFACTORY PYRAMID</span>
+                    <h2>Fragrance Notes</h2>
+                </div>
+                <div class="notes-grid">
+                    <div class="note-card reveal">
+                        <div class="note-icon">✨</div>
+                        <h3>Top Notes</h3>
+                        <p>Bergamot, Sea Salt, Lemon Zest</p>
+                    </div>
+                    <div class="note-card reveal">
+                        <div class="note-icon">🌿</div>
+                        <h3>Heart Notes</h3>
+                        <p>Oud Wood, Lavender, Dry Amber</p>
+                    </div>
+                    <div class="note-card reveal">
+                        <div class="note-icon">🌙</div>
+                        <h3>Base Notes</h3>
+                        <p>Sandalwood, Dark Musk, Vanilla Bean</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications -->
+        <section class="specs" id="specs">
+            <div class="container container-specs">
+                <div class="specs-content glass reveal">
+                    <div class="spec-item">
+                        <span class="spec-label">Burn Time</span>
+                        <div class="spec-val-wrapper">
+                            <span class="spec-num" data-val="65">0</span><span class="spec-unit">hrs</span>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Wax Weight</span>
+                        <div class="spec-val-wrapper">
+                            <span class="spec-num" data-val="280">0</span><span class="spec-unit">g</span>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Natural Oil</span>
+                        <div class="spec-val-wrapper">
+                            <span class="spec-num" data-val="12">0</span><span class="spec-unit">%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" id="cta">
+            <div class="container">
+                <div class="cta-card glass reveal">
+                    <h2>Illuminate Your Space</h2>
+                    <p>Reserved for the discerning. Secured shipping worldwide.</p>
+                    <button class="btn btn-gold btn-large magnetic">SECURE YOUR PIECE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">TRO CANDLE</div>
+                <div class="footer-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Journal</a>
+                    <a href="#">Stockists</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 TRO CANDLE. ARC EDITION.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- UI Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
+    <script type="module" src="js/main.js?v=1.0.2"></script>
+</body>
+
+</html>
